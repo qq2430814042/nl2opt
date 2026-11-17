@@ -1,0 +1,77 @@
+[
+  {
+    "id": "flugpl",
+    "model": "deepseek-chat",
+    "protocol_version": 36,
+    "prompt_mode": "layered",
+    "success": false,
+    "suspicious": false,
+    "suspicious_resolved": false,
+    "attempt": 1,
+    "attempts": 2,
+    "attempts_log": [
+      {
+        "attempt": 1,
+        "success": false,
+        "status": "unknown",
+        "objective_value": null,
+        "rounds": 0,
+        "errors": [
+          "符号化理解失败: 12 validation errors for SymbolicIR\nobjective.expr.terms.0.ref.key_column\n  Field required [type=missing, input_value={'file': 'data/parameters...standard_aircraft_cost'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.12/v/missing\nobjective.expr.terms.0.ref.key_value\n  Field required [type=missing, input_value={'file': 'data/parameters...standard_aircraft_cost'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.12/v/missing\nobjective.expr.terms.1.ref.key_column\n  Field required [type=missing, input_value={'file': 'data/parameters... 'rental_aircraft_cost'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.12/v/missing\nobjective.expr.terms.1.ref.key_value\n  Field required [type=missing, input_value={'file': 'data/parameters... 'rental_aircraft_cost'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.12/v/missing\nobjective.expr.terms.2.ref.key_column\n  Field required [type=missing, input_value={'file': 'data/parameters...olumn': 'overtime_cost'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.12/v/missing\nobjective.expr.terms.2.ref.key_value\n  Field required [type=missing, input_value={'file': 'data/parameters...olumn': 'overtime_cost'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.12/v/missing\nconstraints.1.lhs.terms.1.ref.key_column\n  Field required [type=missing, input_value={'file': 'data/parameters...ircraft_retention_rate'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.12/v/missing\nconstraints.1.lhs.terms.1.ref.key_value\n  Field required [type=missing, input_value={'file': 'data/parameters...ircraft_retention_rate'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.12/v/missing\nconstraints.2.lhs.terms.0.ref.key_column\n  Field required [type=missing, input_value={'file': 'data/parameters...tandard_aircraft_hours'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.12/v/missing\nconstraints.2.lhs.terms.0.ref.key_value\n  Field required [type=missing, input_value={'file': 'data/parameters...tandard_aircraft_hours'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.12/v/missing\nconstraints.2.lhs.terms.1.ref.key_column\n  Field required [type=missing, input_value={'file': 'data/parameters...'rental_aircraft_hours'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.12/v/missing\nconstraints.2.lhs.terms.1.ref.key_value\n  Field required [type=missing, input_value={'file': 'data/parameters...'rental_aircraft_hours'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.12/v/missing"
+        ]
+      },
+      {
+        "attempt": 2,
+        "success": false,
+        "status": "max_rounds_exceeded",
+        "objective_value": null,
+        "rounds": 3,
+        "errors": [
+          "[FAIL] 求解未成功，状态=infeasible，无法做可行性校验\n[FAIL] 求解成功但目标值为空"
+        ]
+      }
+    ],
+    "rounds": 0,
+    "status": "unknown",
+    "objective_value": null,
+    "variables": {},
+    "errors": [
+      "符号化理解失败: 12 validation errors for SymbolicIR\nobjective.expr.terms.0.ref.key_column\n  Field required [type=missing, input_value={'file': 'data/parameters...standard_aircraft_cost'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.12/v/missing\nobjective.expr.terms.0.ref.key_value\n  Field required [type=missing, input_value={'file': 'data/parameters...standard_aircraft_cost'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.12/v/missing\nobjective.expr.terms.1.ref.key_column\n  Field required [type=missing, input_value={'file': 'data/parameters... 'rental_aircraft_cost'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.12/v/missing\nobjective.expr.terms.1.ref.key_value\n  Field required [type=missing, input_value={'file': 'data/parameters... 'rental_aircraft_cost'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.12/v/missing\nobjective.expr.terms.2.ref.key_column\n  Field required [type=missing, input_value={'file': 'data/parameters...olumn': 'overtime_cost'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.12/v/missing\nobjective.expr.terms.2.ref.key_value\n  Field required [type=missing, input_value={'file': 'data/parameters...olumn': 'overtime_cost'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.12/v/missing\nconstraints.1.lhs.terms.1.ref.key_column\n  Field required [type=missing, input_value={'file': 'data/parameters...ircraft_retention_rate'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.12/v/missing\nconstraints.1.lhs.terms.1.ref.key_value\n  Field required [type=missing, input_value={'file': 'data/parameters...ircraft_retention_rate'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.12/v/missing\nconstraints.2.lhs.terms.0.ref.key_column\n  Field required [type=missing, input_value={'file': 'data/parameters...tandard_aircraft_hours'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.12/v/missing\nconstraints.2.lhs.terms.0.ref.key_value\n  Field required [type=missing, input_value={'file': 'data/parameters...tandard_aircraft_hours'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.12/v/missing\nconstraints.2.lhs.terms.1.ref.key_column\n  Field required [type=missing, input_value={'file': 'data/parameters...'rental_aircraft_hours'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.12/v/missing\nconstraints.2.lhs.terms.1.ref.key_value\n  Field required [type=missing, input_value={'file': 'data/parameters...'rental_aircraft_hours'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.12/v/missing",
+      "[尝试 2/2 次均未成功] #1 unknown；#2 max_rounds_exceeded（输出取表现最好的一次：第 1 次）"
+    ],
+    "final_ir": null,
+    "trajectory": [],
+    "token_usage": {
+      "calls": 4,
+      "prompt_tokens": 11730,
+      "completion_tokens": 39168,
+      "total_tokens": 50898,
+      "prompt_tokens_details": {
+        "cached_tokens": 4736
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 32377
+      },
+      "prompt_cache_hit_tokens": 4736,
+      "prompt_cache_miss_tokens": 6994
+    },
+    "stage_usage": {
+      "understand": {
+        "calls": 2,
+        "prompt_tokens": 6120,
+        "completion_tokens": 31714,
+        "total_tokens": 37834,
+        "prompt_cache_hit_tokens": 2816,
+        "prompt_cache_miss_tokens": 3304
+      },
+      "rewrite": {
+        "calls": 2,
+        "prompt_tokens": 5610,
+        "completion_tokens": 7454,
+        "total_tokens": 13064,
+        "prompt_cache_hit_tokens": 1920,
+        "prompt_cache_miss_tokens": 3690
+      }
+    }
+  }
+]
